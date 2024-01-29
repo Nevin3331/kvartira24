@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/catalog';
+@import 'blocks/about';
+@import 'blocks/feedback';
+@import 'blocks/footer';
+@import 'blocks/copyright';
+
+@import 'blocks/rules';
+@import 'blocks/ourselves';
+@import 'blocks/contact';
+
+@import 'blocks/rooms';

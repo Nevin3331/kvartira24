@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Квартиры</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/dist/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header__navbar">
+                <div class="header__logo">
+                    <img src="icons/Logo WIC.svg" alt="main_logo">
+                </div>
+                <ul class="header__navbar_item">
+                    <a href="http://127.0.0.1:5500/src/index.html#" class="sub-link">Главная</a>
+
+                    <div class="dropdown">
+                        <a class="sub-link" href="http://127.0.0.1:5500/src/all_rooms.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Квартиры
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Почасово</a></li>
+                            <li><a class="dropdown-item" href="#">На день</a></li>
+                            <li><a class="dropdown-item" href="#">На ночь</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <a href="http://127.0.0.1:5500/src/rules.html" class="sub-link">Правила</a>
+                    <a href="http://127.0.0.1:5500/contact.html" class="sub-link">Контакты</a>
+                    <a href="http://127.0.0.1:5500/src/about.html#" class="sub-link">О нас</a>
+                </ul>
+                <ul class="header__navbar_tel">
+                    <a href="#" class="header_num">0673465373</a>
+                    <a href="#" class="header_num">0935592033</a>
+                </ul>
+                <ul class="header__navbar_language">
+
+                    <div class="dropdown">
+                        <a class="header_language" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Укр
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Русс</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--         <div class="menu_laptop">
+            <img class="menu_close" src="icons/close_menu.svg" alt="#">
+
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="#" class="menu_link">
+                        VLAVASHE
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="menu_link">
+                        FRIED CHICKEN
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="menu_link">
+                        MANCI BURGER
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#" class="menu_link">
+                        PIZZA PEPPERONI
+                    </a>
+                </li>
+            </ul>
+
+            <button class="menu_btn">
+                contact us
+            </button>
+        </div> -->
+    </header>
+
+    <div class="rooms">
+        <div class="container">
+            <div class="rooms_head">1 ком. полулюкс 3 спальных места(2+1)</div>
+            <div class="rooms_wrappers">
+
+                <div class="rooms_wrappers_left col-sm-6">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/306203 копия.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="img/306203 копия.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/306203 копия.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="rooms_wrappers_right col-sm-5">
+                    <div class="rooms_wrappers_right_title">Однокомнатная квартира</div>
+                    <div class="rooms_wrappers_right_subtitle">Однокомнатная квартира со свежим ремонтом расположена в
+                        250м от
+                        проспекта Соборного в самом центре города</div>
+                    <div class="rooms_wrappers_right_cost">цена 850/сутки</div>
+                    <div class="rooms_wrappers_right_location">ул.Патриотическая 54а</div>
+                    <div class="rooms_wrappers_right_button">
+                        <a href="tel:" class="rooms_wrappers_right_button_btn">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rooms_overview">
+                <ul class="rooms_overview_tabs">
+                    <li class="rooms_overview_tab rooms_overview_tab_active" data-content-id="tab1">
+                        <div>Оснащение</div>
+                    </li>
+                    <li class="rooms_overview_tab" data-content-id="tab2">
+                        <div>Описание</div>
+                    </li>
+                    <li class="rooms_overview_tab" data-content-id="tab3">
+                        <div>Заведние рядом</div>
+                    </li>
+                    <li class="rooms_overview_tab" data-content-id="tab4">
+                        <div>Показать на карте</div>
+                    </li>
+                </ul>
+
+                <div class="rooms_descr rooms_descr_active" data-content-id="tab1">
+                    <div class="rooms_descr_title">
+                        Оснащение:
+                    </div>
+                    <hr>
+                    <div class="rooms_descr_list">
+                        <ul class="col-sm-4">
+                            <li>Холодильник</li>
+                            <li>Стиральная машина</li>
+                            <li>СВЧ</li>
+                            <li>Телевизор плазма</li>
+                            <li>Цифровое телевидение</li>
+                        </ul>
+                        <ul class="col-sm-4">
+                            <li>Сушка</li>
+                            <li>Балкон</li>
+                            <li>Домофон</li>
+                            <li>Wi -fi</li>
+                            <li>Вся посуда</li>
+                        </ul>
+                        <ul class="col-sm-4">
+                            <li>Два комплекта полотенец</li>
+                            <li>Всегда качественное постельное белье</li>
+                            <li>Большой, комфортный раздвижной диван</li>
+                            <li>Спальное место 1600х2000 (1 спальное место, размещение до 2-х человек, возможно
+                                докомплектация раскладушкой или большим надувным матрацем).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rooms_descr" data-content-id="tab2">
+                    <div class="rooms_descr_title">
+                        Описание
+                    </div>
+                    <hr>
+                    <div class="rooms_descr_sublist">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus doloremque
+                        exercitationem quas omnis maiores nobis nam quos minima a accusamus officia, voluptatibus culpa
+                        totam expedita reprehenderit laudantium deserunt ducimus.
+                    </div>
+                </div>
+
+                <div class="rooms_descr" data-content-id="tab3">
+                    <div class="rooms_descr_title">
+                        Заведние рядом
+                    </div>
+                    <hr>
+                    <div class="rooms_descr_sublist">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus doloremque
+                        exercitationem quas omnis maiores nobis nam quos minima a accusamus officia, voluptatibus culpa
+                        totam expedita reprehenderit laudantium deserunt ducimus.
+                    </div>
+                </div>
+
+                <div class="rooms_descr" data-content-id="tab4">
+                    <div class="rooms_descr_title">
+                        Показать на карте
+                    </div>
+                    <hr>
+                    <div class="rooms_descr_map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d130298.88430968099!2d34.9907329018777!3d47.80567192879373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1706357316230!5m2!1suk!2sua"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+            <form method="POST" action="#" class="comment-form" id="comment-form">
+
+                <div class="form-group">
+                    <label for="comment-form-author">Ваше имя</label>
+                    <input type="text" name="author" class="form-control" id="comment-form-author" value="">
+                </div>
+                <div class="form-group">
+                    <label for="comment-form-email">Ваш email</label>
+                    <input type="text" name="email" class="form-control" id="comment-form-email" value="">
+                </div>
+                <div class="form-group">
+                    <label for="comment-form-author">Оцените</label>
+                    <div class="stars stars_select">
+                        <a href="#" class="stars-item active selected"></a>
+                        <a href="#" class="stars-item"></a>
+                        <a href="#" class="stars-item"></a>
+                        <a href="#" class="stars-item"></a>
+                        <a href="#" class="stars-item"></a>
+                        <input type="hidden" name="stars" id="comment-form-stars" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment-form-comment">Комментарий</label>
+                    <textarea name="comment" id="comment-form-comment" rows="10" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Добавить</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__navbar">
+                <div class="footer__logo">
+                    <img src="icons/Logo WIC.svg" alt="main_logo">
+                </div>
+                <ul class="footer__navbar_item">
+                    <a href="#" class="sub-link">Главная</a>
+                    <div class="dropdown">
+                        <a class="sub-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Квартиры
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Почасово</a></li>
+                            <li><a class="dropdown-item" href="#">На день</a></li>
+                            <li><a class="dropdown-item" href="#">На ночь</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="sub-link">Правила</a>
+                    <a href="#" class="sub-link">Отзывы</a>
+                    <a href="#" class="sub-link">О нас</a>
+                </ul>
+                <ul class="footer__navbar_tel">
+                    <a href="#" class="header_num">0673465373</a>
+                    <a href="#" class="header_num">0935592033</a>
+                </ul>
+                <ul class="footer__navbar_tel">
+                    <a href="#" class="header_language">Русс</a>
+                    <a href="#" class="header_language">Укр</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright_descr">
+                <p class="copyright_text">All rights reserved © 2023</p>
+                <p><a href="https://github.com/Nevin3331">Зроблено в Whale production</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/rating.js"></script>
+
+
+</body>
+
+</html>
